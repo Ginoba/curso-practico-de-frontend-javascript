@@ -1,3 +1,5 @@
+/* General */
+
 body {
   margin: 0;
   font-family: 'Quicksand', sans-serif;
@@ -14,6 +16,11 @@ body {
   --lg: 18px;
 }
 
+.inactive {
+  display: none;
+}
+
+/* Navbar (general) */
 nav {
   display: flex;
   justify-content: space-between;
@@ -21,9 +28,6 @@ nav {
   border-bottom: 1px solid var(--very-light-pink);
 }
 
-.inactive {
-  display: none;
-}
 
 .menu {
   display: none;
@@ -92,6 +96,7 @@ nav {
   align-items: center;
 }
 
+/* Menu en Desktop */
 .desktop-menu {
   position: absolute;
   top: 60px;
@@ -133,6 +138,58 @@ nav {
   color: var(--black);
   text-decoration: none;
   margin-bottom: 20px;
+  display: inline-block;
+}
+
+/* Menu en Mobile */
+.mobile-menu {
+  position: absolute;
+  top: 60px;
+  padding: 24px;
+}
+
+.mobile-menu .sign-out {
+  color: var(--hospital-green);
+  font-size: var(--sm);
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-menu ul {
+  list-style: none;
+}
+
+.mobile-menu a {
+  color: var(--black);
+  text-decoration: none;
+  margin-bottom: 24px;
+  display: inline-block;
+}
+
+.mobile-menu ul li:nth-child(1) {
+  font-size: var(--md);
+}
+
+.mobile-menu ul:nth-child(1) {
+  border-bottom: 1px solid var(--text-input-field);
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.mobile-menu ul li {
+  font-weight: bold;
+  font-size: var(--sm);
+}
+
+.mobile-menu .email {
+  color: var(--very-light-pink);
+  font-size: var(--sm);
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.mobile-menu .log-out {
+  margin-top: 30px;
   display: inline-block;
 }
 
