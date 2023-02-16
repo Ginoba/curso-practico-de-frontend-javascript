@@ -213,11 +213,13 @@ nav {
 
 .product-detail {
   background-color: var(--white);
-  width: 360px;
-  padding: 0 24px;
+  width: 332px;
+  padding: 12px 24px;
   box-sizing: border-box;
   position: absolute;
-  right: 0;
+  right: 2px;
+  border: 1px var(--very-light-pink) solid;
+  border-radius: 4px;
 }
 
 .my-order-content {
@@ -289,6 +291,7 @@ nav {
   gap: 26px;
   place-content: center;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .product-card {
